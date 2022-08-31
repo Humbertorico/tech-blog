@@ -1,5 +1,4 @@
 const { Model, DataTypes } = require('sequelize');
-const { comment } = require('.');
 const sequelize = require('../config/connection');
 
 class Comment extends Model {}
@@ -43,4 +42,4 @@ Comment.init(
   }
 );
 
-module.exports = comment;
+module.exports = Comment;
